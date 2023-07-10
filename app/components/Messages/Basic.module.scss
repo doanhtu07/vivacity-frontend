@@ -1,0 +1,102 @@
+.root {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.person {
+  margin-bottom: 24px;
+
+  display: flex;
+  padding: 10px 16px;
+  border-radius: 5px;
+  background-color: rgb(var(--card-primary-color-rgb));
+
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+
+  &.secondary {
+    background-color: rgb(var(--card-secondary-color-rgb));
+  }
+}
+
+.typewriterWrapper {
+  line-height: 24px;
+}
+
+.quoteBlock {
+  margin-top: 12px;
+
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  font-size: var(--font-size-sm);
+
+  background-color: rgb(var(--chip-color-rgb));
+  border-radius: 5px;
+}
+
+.inputBlock {
+  margin-top: 12px;
+  margin-bottom: 8px;
+
+  width: 280px;
+
+  > input {
+    font-size: var(--font-size-sm);
+
+    color: white;
+    outline: unset;
+    border: unset;
+    background-color: rgb(var(--chip-color-rgb));
+    padding: 10px 12px;
+    width: 100%;
+    border-radius: 8px;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.actions {
+  margin-top: 12px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  flex-wrap: wrap;
+
+  > .chip {
+    font-size: var(--font-size-xs);
+
+    background-color: rgb(var(--chip-color-rgb));
+    border: 2px solid rgb(var(--chip-color-rgb));
+
+    padding: 8px 12px;
+    border-radius: 24px;
+    cursor: pointer;
+    user-select: none;
+
+    transition: border 200ms;
+
+    &.chosen {
+      border: 2px solid rgb(var(--chip-chosen-border-color-rgb));
+    }
+  }
+
+  > .imageChip {
+    width: 480px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+.hidden {
+  margin: 0;
+  padding: 0;
+  height: 0;
+  width: 0;
+}
