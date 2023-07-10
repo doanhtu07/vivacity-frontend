@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# vivacity-frontend
 
-## Getting Started
+## Env File
 
-First, run the development server:
+Normally, you would want to gitignore the .env.local and .next-env.d.ts file. But for the sake of testing, I'll leave these files right in the repo.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Setup
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To have the greatest experience, you should have my `backend` running `yarn dev` already to support API calls.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Run
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Run `yarn install`.
 
-## Learn More
+2. Run `yarn dev`.
 
-To learn more about Next.js, take a look at the following resources:
+## Requirements Check
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [x] Create a professional user interface in TypeScript using React
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [x] Allow the user to click on a picture of you and then have it call the API endpoint and display the information from the API on the page.
 
-## Deploy on Vercel
+- [x] Store this code in GitHub and add nathanbirch as a collaborator
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Stretch Challenges Check
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [x] Add additional content to the webpage(s) to make the application look good
+
+- [x] Allow the user to edit the data content coming from the API (only if you created a PostgreSQL database)
+
+- [ ] Write unit tests in Jest to test your code
+
+- [ ] Use the Redux Toolkit to store the API data
